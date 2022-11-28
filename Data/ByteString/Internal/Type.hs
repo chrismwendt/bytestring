@@ -873,7 +873,7 @@ stimesNonNegativeInt n (BS fp len)
 
 -- | Conversion between 'Word8' and 'Char'. Should compile to a no-op.
 w2c :: Word8 -> Char
-w2c = unsafeChr . fromIntegral
+w2c _ = 'x'
 {-# INLINE w2c #-}
 
 -- | Unsafe conversion between 'Char' and 'Word8'. This is a no-op and
